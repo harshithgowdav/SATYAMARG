@@ -1,0 +1,514 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f6f0;
+    color: #17243a;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #101e35;
+    color: white;
+}
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #e6bd70;
+}
+.logo span {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 9px;
+    letter-spacing: 3px;
+    color: white;
+    text-align: center;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    transition: 0.3s;
+}
+.nav-links a:hover {
+    color: #e6bd70;
+}
+.nav-btn {
+    border: 1px solid #e6bd70;
+    padding: 10px 22px;
+    border-radius: 5px;
+}
+.hero {
+    text-align: center;
+    padding: 65px 8% 85px;
+    background: linear-gradient(135deg, #101e35, #243c5b);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+.emblem {
+    margin-bottom: 15px;
+}
+.emblem img {
+    width: 95px;
+    height: 95px;
+    object-fit: contain;
+}
+.motto {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    color: #e6bd70;
+    letter-spacing: 2px;
+}
+.translation {
+    font-size: 11px;
+    letter-spacing: 4px;
+    margin-top: 10px;
+    color: #d5dce6;
+}
+.divider {
+    width: 90px;
+    height: 3px;
+    margin: 25px auto;
+    background: linear-gradient(
+        to right,
+        #ff9933 33%,
+        white 33% 66%,
+        #138808 66%
+    );
+}
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    margin-bottom: 18px;
+}
+.hero h1 span {
+    color: #e6bd70;
+}
+.hero-description {
+    max-width: 650px;
+    margin: auto;
+    color: #d5dce6;
+    font-size: 14px;
+    line-height: 1.9;
+}
+.hero-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 28px;
+    background: #d6ad63;
+    color: #101e35;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.hero-btn:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+.constitution {
+    padding: 65px 8%;
+    text-align: center;
+    background: #eee9dc;
+}
+.constitution-content {
+    max-width: 750px;
+    margin: auto;
+}
+.small-heading {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #a27a36;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.constitution h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    margin-bottom: 18px;
+    color: #152844;
+}
+.constitution-content > p:last-child {
+    font-size: 13px;
+    line-height: 2;
+    color: #666;
+}
+.guidance-section {
+    padding: 75px 8%;
+    background: #faf9f5;
+}
+.section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+.section-heading > p {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #b18b49;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.section-heading h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    color: #152844;
+    margin-bottom: 12px;
+}
+.section-heading span {
+    color: #777;
+    font-size: 13px;
+}
+.form-card {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    border-top: 4px solid #d6ad63;
+    box-shadow: 0 10px 40px rgba(16, 30, 53, 0.08);
+}
+.input-group {
+    margin-bottom: 25px;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #243650;
+}
+select,
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #d9dce2;
+    border-radius: 7px;
+    background: #fcfcfc;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    outline: none;
+    transition: 0.3s;
+}
+select:focus,
+textarea:focus {
+    border-color: #c59b50;
+    box-shadow: 0 0 0 3px rgba(197, 155, 80, 0.12);
+}
+textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+textarea::placeholder {
+    color: #aaa;
+}
+.input-group small {
+    display: block;
+    margin-top: 8px;
+    font-size: 11px;
+    color: #999;
+}
+.submit-btn {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 7px;
+    background: #152844;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.submit-btn:hover {
+    background: #c49b54;
+    transform: translateY(-2px);
+}
+.privacy {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 11px;
+    color: #888;
+}
+.features {
+    padding: 70px 8%;
+    background: #f0ede5;
+}
+.feature-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+.feature-card {
+    background: white;
+    padding: 35px 25px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+    border-bottom: 3px solid transparent;
+}
+.feature-card:hover {
+    transform: translateY(-7px);
+    border-bottom-color: #d6ad63;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+}
+.feature-icon {
+    font-size: 35px;
+    margin-bottom: 18px;
+}
+.feature-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.feature-card p {
+    font-size: 12px;
+    color: #777;
+    line-height: 1.9;
+}
+footer {
+    padding: 40px 8%;
+    background: #101e35;
+    text-align: center;
+    color: white;
+}
+footer h2 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 4px;
+    color: #e6bd70;
+    margin-bottom: 10px;
+}
+.footer-motto {
+    color: #e6bd70;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+footer p {
+    font-size: 12px;
+    color: #c5cbd3;
+    line-height: 2;
+}
+.footer-line {
+    width: 70px;
+    height: 2px;
+    background: #d6ad63;
+    margin: 20px auto;
+}
+footer small {
+    font-size: 11px;
+    color: #aeb7c4;
+}
+.disclaimer {
+    margin-top: 12px;
+}
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 18px 5%;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        padding: 55px 6%;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .motto {
+        font-size: 27px;
+    }
+
+    .constitution h2 {
+        font-size: 26px;
+    }
+
+    .guidance-section {
+        padding: 50px 5%;
+    }
+
+    .form-card {
+        padding: 25px 18px;
+    }
+
+    .section-heading h2 {
+        font-size: 27px;
+    }
+
+    .feature-container {
+        grid-template-columns: 1fr;
+    }
+
+    .features {
+        padding: 50px 6%;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .hero h1 {
+        font-size: 29px;
+    }
+
+    .emblem img {
+        width: 75px;
+        height: 75px;
+    }
+
+}
+/* SATYAMARG LEGAL REPORT */
+
+.legal-report {
+    max-width: 950px;
+    margin: 50px auto;
+    padding: 55px;
+    background: #ffffff;
+    color: #222;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.8;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.15);
+    border: 1px solid #d6d6d6;
+}
+
+.report-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.report-header h1 {
+    color: #101e35;
+    font-size: 34px;
+    letter-spacing: 3px;
+}
+
+.report-header h2 {
+    font-size: 23px;
+    letter-spacing: 2px;
+    margin-top: 15px;
+}
+
+.report-header p {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.report-meta {
+    padding: 18px;
+    background: #f4f5f7;
+    border-left: 4px solid #b99552;
+    margin-bottom: 35px;
+}
+
+.report-content h3 {
+    color: #101e35;
+    font-size: 17px;
+    margin-top: 30px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d6b46a;
+}
+
+.report-content p,
+.report-content li {
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.report-card {
+    background: #fafafa;
+    padding: 18px;
+    margin: 15px 0;
+    border: 1px solid #e0e0e0;
+    border-left: 4px solid #b99552;
+}
+
+.report-card h4 {
+    color: #101e35;
+}
+
+.judgment-card {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.judgment-card a {
+    color: #9a722b;
+    font-weight: bold;
+}
+
+.report-footer {
+    text-align: center;
+    margin-top: 45px;
+    font-size: 12px;
+    color: #666;
+}
+
+.print-btn {
+    display: block;
+    margin: 30px auto 0;
+    padding: 13px 30px;
+    background: #101e35;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media print {
+    body {
+        background: white;
+    }
+
+    .legal-report {
+        box-shadow: none;
+        border: none;
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .print-btn,
+    form {
+        display: none !important;
+    }
+
+    .judgment-card,
+    .report-card {
+        break-inside: avoid;
+    }
+}
+
+@media (max-width: 600px) {
+    .legal-report {
+        padding: 20px;
+        margin: 15px;
+    }
+}
